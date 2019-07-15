@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Header from './components/header/header';
+import Manage from './pages/manage/manage';
+import Request from './pages/request/request';
+import S from './App.module.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div className={S.app}>
+    <Router>
+      <Header title={'DATA GATE'}/>
+      <Switch>
+        <Route path='/manage' component={Manage}/>
+        <Route path='/request' component={Request}/>
+        <Route render={() => <h3>please, Select a option</h3>}/>
+      </Switch>
+    </Router>
+  </div>;
 }
 
 export default App;

@@ -1,0 +1,14 @@
+.input:focus, textarea:focus{
+    outline: none;
+}
+
+.input, .textarea{
+    padding: 5px;
+    font-size: 14px;
+    border: 0 solid #CCC;
+    box-shadow: #ccc 1px 1px 1px;;
+}
+
+.textarea{
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+.menu{
+    min-width: 250px;
+}
+
+.option{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.active{
+    background-color: var(--primary-color);
+}
+

@@ -1,0 +1,50 @@
+{
+  "fields": [
+    "user_id",
+    "item_id",
+    "user_email",
+    "item_view",
+    "item_favorites"
+  ],
+  "data": [
+    {
+      "field": "user_id",
+      "description": "Contains the id of item",
+      "type": "Intenger",
+      "sensitivity": {
+        "value": true,
+        "summary": "This personal data, and cannot be distributed in raw form"
+      },
+      "values": [
+        {"value": "null", "description": "Value when user is not found"},
+        {"value": "{integer}", "description": "ID key of user"}
+      ]
+    },
+    {
+      "field": "item_id",
+      "description": "Contains the primary key used to identify a user of the system",
+      "type": "Intenger",
+      "sensitivity": {
+        "value": true,
+        "summary": "This personal data, and cannot be distributed in raw form"
+      },
+      "values": [
+        {"value": "null", "description": "Value when user is not found"},
+        {"value": "{integer}", "description": "ID of item"}
+      ]
+    },
+    {
+      "field": "user_email",
+      "description": "Contains the email of user of the system",
+      "type": "Email",
+      "sensitivity": {
+        "value": true,
+        "summary": "This personal data, and cannot be distributed in raw form"
+      },
+      "values": [
+        {"value": "null", "description": "Value when user is not found"},
+        {"value": "{email}", "description": "email of user"}
+      ]
+    }
+  ]
+}
